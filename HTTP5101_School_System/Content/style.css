@@ -21,3 +21,34 @@ footer{margin-top:50px;}
 .col4, .col4last{float:left; width:21.73%; margin-right:4.34%;}
 .col4last{margin-right:0%;}
 
+/*
+Each column should be 17.48% wide with a gutter space of 3.14%
+*/
+.col5 {
+    width: 17.48%;
+    float: left;
+    margin-right: 3.14%;
+}
+
+.col5last {
+    width: 17.48%;
+    float: left;
+    margin-right: 0;
+}
+/*
+Each column should be 14.49% wide with a gutter space of 2.6%
+*/
+#teachers_result {
+    width: 100%;
+}
+.col6 {
+    width: 14.49%;
+    float: left;
+    margin-right: 2.6%;
+}
+
+.col6last {
+    width: 14.49%;
+    float: left;
+    margin-right: 0;
+}
