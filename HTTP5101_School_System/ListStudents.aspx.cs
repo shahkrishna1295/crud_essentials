@@ -30,7 +30,7 @@ namespace HTTP5101_School_System
                 //read more about SQL injections
                 //https://www.csoonline.com/article/3257429/what-is-sql-injection-how-sqli-attacks-work-and-how-to-prevent-them.html
                 //we will learn to defend against these attacks next semester
-                searchkey = student_search.Text;
+                //searchkey = student_search.Text;
             }
 
             
@@ -42,7 +42,7 @@ namespace HTTP5101_School_System
                 query += " or STUDENTLNAME like '%"+searchkey+"%' ";
                 query += " or STUDENTNUMBER like '%"+searchkey+"%' ";
             }
-            sql_debugger.InnerHtml = query;
+            //sql_debugger.InnerHtml = query;
 
             var db = new SCHOOLDB();
             List<Dictionary<String,String>> rs = db.List_Query(query);
@@ -53,21 +53,32 @@ namespace HTTP5101_School_System
                 string studentid = row["STUDENTID"];
 
                 string studentfirstname = row["STUDENTFNAME"];
-                students_result.InnerHtml += "<div class=\"col4\"><a href=\"ShowStudent.aspx?studentid="+studentid+"\">" + studentfirstname + "</a></div>";
+                students_result.InnerHtml += "<div class=\"col5\"><a href=\"ShowStudent.aspx?studentid="+studentid+"\">" + studentfirstname + "</a></div>";
 
                 string studentlastname = row["STUDENTLNAME"];
-                students_result.InnerHtml += "<div class=\"col4\">" + studentlastname + "</div>";
+                students_result.InnerHtml += "<div class=\"col5\">" + studentlastname + "</div>";
 
                 string studentnumber = row["STUDENTNUMBER"];
-                students_result.InnerHtml += "<div class=\"col4\">" + studentnumber + "</div>";
+                students_result.InnerHtml += "<div class=\"col5\">" + studentnumber + "</div>";
 
                 string enrolmentdate = row["ENROLMENTDATE"];
-                students_result.InnerHtml += "<div class=\"col4last\">" + enrolmentdate + "</div>";
+                students_result.InnerHtml += "<div class=\"col5\">" + enrolmentdate + "</div>";
+                
+               
+                students_result.InnerHtml += "<div class=\"col5last\"><a href=\"DelStudents.aspx?studentid=" + studentid+ "\">"+"<button type=\"button\">Delete</button></a></div>";
 
                 students_result.InnerHtml += "</div>";
-            }
-            
 
+                
+
+
+            }
+
+           
+            
+            
         }
+       
+
     }
 }

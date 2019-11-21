@@ -10,9 +10,10 @@
 <body>
     <header>
         <div class="cwidth">
-            Hello Everyone!
+            CRUD ESSENTIALS
         </div>
     </header>
+    
     <div class="cwidth">
         <form id="form1" runat="server">
             <asp:ContentPlaceHolder ID="body" runat="server">
@@ -21,7 +22,7 @@
     </div>
     <footer>
         <div class="cwidth">
-             My Ultra Awesome Footer Here
+             @HUMBER COLLEGE
         </div>
     </footer>
 </body>

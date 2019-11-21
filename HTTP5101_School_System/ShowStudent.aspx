@@ -11,5 +11,9 @@
         Last Name: <span id="student_lname" runat="server"></span><br />
         Student Number: <span id="student_number" runat="server"></span><br />
         Enrolment Date: <span id="enrolment_date" runat="server"></span><br />
+        
+        
+       
+       
     </div>
 </asp:Content>

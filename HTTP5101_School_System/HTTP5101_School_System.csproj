@@ -128,6 +128,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
+    <Content Include="DelStudents.aspx" />
     <Content Include="EditTeacher.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -180,6 +181,13 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="DelStudents.aspx.cs">
+      <DependentUpon>DelStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DelStudents.aspx.designer.cs">
+      <DependentUpon>DelStudents.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EditTeacher.aspx.cs">
       <DependentUpon>EditTeacher.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

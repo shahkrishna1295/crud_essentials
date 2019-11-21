@@ -7,17 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace HTTP5101_School_System
 {
-    public partial class ShowStudent : System.Web.UI.Page
+    public partial class DelStudents : System.Web.UI.Page
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
-                bool valid = true;
+            bool valid = true;
             string studentid = Request.QueryString["studentid"];
             if (String.IsNullOrEmpty(studentid)) valid = false;
 
-           
+
 
 
 
@@ -36,7 +35,7 @@ namespace HTTP5101_School_System
                     student_number.InnerHtml = student_record["STUDENTNUMBER"];
                     enrolment_date.InnerHtml = student_record["ENROLMENTDATE"];
 
-                    
+
                 }
                 else
                 {
@@ -49,8 +48,19 @@ namespace HTTP5101_School_System
                 student.InnerHtml = "There was an error finding that student.";
             }
 
-            
+
         }
-        
+        protected void delete_function(object sender, EventArgs e)
+        {
+            string query = "delete from students where studentid=" + Request.QueryString["studentid"];
+            var db = new SCHOOLDB();
+            db.PerformCRUD(query);
+            Response.Redirect("ListStudents.aspx");
+        }
+        protected void cancel_function(object sender, EventArgs e)
+        {
+          
+            Response.Redirect("ListStudents.aspx");
+        }
     }
 }
