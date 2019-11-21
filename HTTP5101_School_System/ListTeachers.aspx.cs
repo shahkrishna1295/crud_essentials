@@ -33,6 +33,8 @@ namespace HTTP5101_School_System
             {
                 teachers_result.InnerHtml += "<div class=\"listitem\">";
 
+                string teacherid = row["TEACHERID"];
+
                 string teacherfirstname = row["TEACHERFNAME"];
                 teachers_result.InnerHtml += "<div class=\"col6\">" + teacherfirstname + "</div>";
 

@@ -23,8 +23,8 @@ namespace HTTP5101_School_System
                     string teacher_lastname = teacher_lname.Text;
                     string teacher_employee_number = employee_number.Text;
                     string teacher_hiredate = hire_date.Text;
-                    DateTime dt = DateTime.ParseExact(teacher_hiredate, "yyyy-MM-dd hh:mm:ss tt",
-                                           CultureInfo.InvariantCulture);
+                    //DateTime dt = DateTime.ParseExact(teacher_hiredate, "yyyy-MM-dd hh:mm:ss tt",
+                    //                       CultureInfo.InvariantCulture);
                     string teacher_salary = salary.Text;
                     string query = "update teachers set teacherfname = \"" + teacher_firstname +  "\" , teacherlname = \"" +
                         teacher_lastname + "\", employeenumber =\"" + teacher_employee_number + "\", salary =\"" + teacher_salary + "\" where teacherid = \"" + teacher_record + "\"";

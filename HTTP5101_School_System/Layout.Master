@@ -8,21 +8,39 @@
     <link rel="stylesheet" type="text/css" href="/Content/style.css" />
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="cwidth">
-            CRUD ESSENTIALS
+            <p>Welcome to School System</p>
         </div>
     </header>
-    
+   
+    <div class="banner">
+        <div class="cwidth">
+            <ul class="classes">
+                <li><a href="ListStudents.aspx">Students</a></li>
+                <li><a href="ListTeachers.aspx">Teachers</a></li>
+                <li><a href="ListClasses.aspx">Classes</a></li>
+            </ul>
+            <div class="background-img">
+                <img src="images/humberbanner.jpg" alt="Image of Humber College"/>
+            </div>
+        </div>
+        
+    </div>
     <div class="cwidth">
         <form id="form1" runat="server">
             <asp:ContentPlaceHolder ID="body" runat="server">
             </asp:ContentPlaceHolder>
         </form>
     </div>
-    <footer>
+    <footer id="footer">
         <div class="cwidth">
-             @HUMBER COLLEGE
+            <ul>
+                <li>&#9400;</li>
+                <li>Sukhdeep</li>
+                <li>Yash</li>
+                <li>Krishna</li>
+            </ul>
         </div>
     </footer>
 </body>
