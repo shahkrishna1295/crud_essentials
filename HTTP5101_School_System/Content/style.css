@@ -37,7 +37,7 @@ footer .cwidth li:nth-last-of-type(n+1) {
 
 .classes {
     position: absolute;
-    margin:3% 0 0 15%;
+    margin:3% 0 0 25%;
 }
 .banner img {
     width: 100%;
@@ -47,7 +47,7 @@ footer .cwidth li:nth-last-of-type(n+1) {
 .classes li {
     display: inline-block;
     padding: 10px;
-    background-color: #6D466B;
+    background-color: #FFB30F;
     border-radius: 2px;
 }
  
@@ -55,7 +55,7 @@ footer .cwidth li:nth-last-of-type(n+1) {
     text-decoration: none;
     font-size:1.5em;
     padding:30px;
-    color: white;
+    color: #000000;
 }
 button, .save_button, .add_button, .search_button, .cancel_button {
     border: 0;
@@ -85,8 +85,18 @@ button, .save_button, .add_button, .search_button, .cancel_button {
 .col6last button {
     background-color: #FD151B;
 }
+#confirmation{
+    color:#ff0000;
+    font-weight: bolder;
+    font-size: 1.5em;
+    border:0;
+    padding:5px;
+   
+}
 /*CSS FOR TABLE-LIKE STYLING*/
-#students_result {width:100%;}
+#students_result {
+    width: 100%;
+}
 .listitem {background:#fefefe; padding: 8px 3%; width:90%; overflow:hidden;}
 
 .listitem:after{clear:both;}

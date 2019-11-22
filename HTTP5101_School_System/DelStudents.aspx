@@ -19,7 +19,7 @@
        <span id="enrolment_date" runat="server"></span>
     </div>
 
-    <div>Are you sure you want to delete?</div>
+    <div id="confirmation">Are you sure you want to delete?</div>
     <asp:button type="button" runat="server" text="Delete" onclick="delete_function" CssClass="save_button" />
     <asp:button type="button" runat="server" text="Cancel" onclick="cancel_function" CssClass="cancel_button" />
 
