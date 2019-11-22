@@ -25,7 +25,7 @@ namespace HTTP5101_School_System
         private static string Password { get { return "root"; } }
         private static string Database { get { return "school"; } }
         private static string Server { get { return "localhost"; } }
-        private static string Port { get { return "	3308"; } }
+        private static string Port { get { return "	3306"; } }
 
         //ConnectionString is something that we use to connect to a database
         private static string ConnectionString

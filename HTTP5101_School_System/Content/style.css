@@ -57,7 +57,7 @@ footer .cwidth li:nth-last-of-type(n+1) {
     padding:30px;
     color: #000000;
 }
-button, .save_button, .add_button, .search_button, .cancel_button {
+button, .save_button, .add_button, .search_button, .cancel_button, .delete_button {
     border: 0;
     font-size: 1em;
     padding: 5px 10px;
@@ -75,14 +75,21 @@ button, .save_button, .add_button, .search_button, .cancel_button {
     background-color: #723287;
     color:#ffffff;
 }
+
+.delete_button {
+    margin: 1%;
+    background-color: #FD151B;
+    color: #ffffff;
+}
+
 .cancel_button {
     margin: 1%;
     background-color: #628395;
 }
-.col6 button {
+.col6last button {
     background-color: #FFB30F;
 }
-.col6last button {
+.col6 button {
     background-color: #FD151B;
 }
 #confirmation{
