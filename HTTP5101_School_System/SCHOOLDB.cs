@@ -231,7 +231,6 @@ namespace HTTP5101_School_System
             Connect.Open();
             MySqlCommand cmd = new MySqlCommand(query, Connect);
             MySqlDataReader resultset = cmd.ExecuteReader();
-
         }
     }
 }

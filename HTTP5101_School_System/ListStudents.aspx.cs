@@ -30,7 +30,7 @@ namespace HTTP5101_School_System
                 //read more about SQL injections
                 //https://www.csoonline.com/article/3257429/what-is-sql-injection-how-sqli-attacks-work-and-how-to-prevent-them.html
                 //we will learn to defend against these attacks next semester
-                //searchkey = student_search.Text;
+                searchkey = student_search.Text;
             }
 
             
@@ -43,8 +43,9 @@ namespace HTTP5101_School_System
                 query += " or STUDENTNUMBER like '%"+searchkey+"%' ";
             }
             //sql_debugger.InnerHtml = query;
-
+            
             var db = new SCHOOLDB();
+            
             List<Dictionary<String,String>> rs = db.List_Query(query);
             foreach(Dictionary<String,String> row in rs)
             {
@@ -78,7 +79,11 @@ namespace HTTP5101_School_System
             
             
         }
-       
+        protected void Add_Student(object sender, EventArgs e)
+        {
+            Response.Redirect("AddStudent.aspx");
+            //students_result.InnerHtml += "<a href=\"AddStudent.aspx\"></a>";
+        }
 
     }
 }
