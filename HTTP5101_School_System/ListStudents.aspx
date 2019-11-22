@@ -14,11 +14,12 @@
     </div>
     <div class="_table" runat="server">
         <div class="listitem">
-            <div class="col5">FIRST NAME</div>
-            <div class="col5">LAST NAME</div>
-            <div class="col5">STUDENT NUMBER</div>
-            <div class="col5">ENROLMENT DATE</div>
-            <div class="col5last"></div> 
+            <div class="col6">FIRST NAME</div>
+            <div class="col6">LAST NAME</div>
+            <div class="col6">STUDENT NUMBER</div>
+            <div class="col6">ENROLMENT DATE</div>
+            <div class="col6"></div>
+            <div class="col6last"></div> 
         </div>
         <div id="students_result" runat="server">
 

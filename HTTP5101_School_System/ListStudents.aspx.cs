@@ -54,36 +54,32 @@ namespace HTTP5101_School_System
                 string studentid = row["STUDENTID"];
 
                 string studentfirstname = row["STUDENTFNAME"];
-                students_result.InnerHtml += "<div class=\"col5\"><a href=\"ShowStudent.aspx?studentid="+studentid+"\">" + studentfirstname + "</a></div>";
+                students_result.InnerHtml += "<div class=\"col6\"><a href=\"ShowStudent.aspx?studentid="+studentid+"\">" + studentfirstname + "</a></div>";
 
                 string studentlastname = row["STUDENTLNAME"];
-                students_result.InnerHtml += "<div class=\"col5\">" + studentlastname + "</div>";
+                students_result.InnerHtml += "<div class=\"col6\">" + studentlastname + "</div>";
 
                 string studentnumber = row["STUDENTNUMBER"];
-                students_result.InnerHtml += "<div class=\"col5\">" + studentnumber + "</div>";
+                students_result.InnerHtml += "<div class=\"col6\">" + studentnumber + "</div>";
 
                 string enrolmentdate = row["ENROLMENTDATE"];
-                students_result.InnerHtml += "<div class=\"col5\">" + enrolmentdate + "</div>";
+                students_result.InnerHtml += "<div class=\"col6\">" + enrolmentdate + "</div>";
                 
                
-                students_result.InnerHtml += "<div class=\"col5last\"><a href=\"DelStudents.aspx?studentid=" + studentid+ "\">"+"<button type=\"button\">Delete</button></a></div>";
-
+                students_result.InnerHtml += "<div class=\"col6\"><a href=\"DelStudents.aspx?studentid=" + studentid+ "\">"+"<button type=\"button\">Delete</button></a></div>";
+                students_result.InnerHtml += "<div class=\"col6last\"><a href=\"EditStudent.aspx?studentid=" + studentid + "\"> <button type=\"button\">Edit</button></a></div>";
                 students_result.InnerHtml += "</div>";
 
-                
-
-
-            }
-
-           
-            
-            
+            }  
         }
         protected void Add_Student(object sender, EventArgs e)
         {
             Response.Redirect("AddStudent.aspx");
-            //students_result.InnerHtml += "<a href=\"AddStudent.aspx\"></a>";
         }
 
+        protected void Edit_Student(object sender, EventArgs e)
+        {
+            Response.Redirect("EditStudent.aspx");
+        }
     }
 }

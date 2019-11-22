@@ -229,6 +229,7 @@ namespace HTTP5101_School_System
         {
             MySqlConnection Connect = new MySqlConnection(ConnectionString);
             Connect.Open();
+            Debug.WriteLine(query);
             MySqlCommand cmd = new MySqlCommand(query, Connect);
             MySqlDataReader resultset = cmd.ExecuteReader();
         }

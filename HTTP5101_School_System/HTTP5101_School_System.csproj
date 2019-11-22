@@ -131,6 +131,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
     <Content Include="DelStudents.aspx" />
+    <Content Include="EditStudent.aspx" />
     <Content Include="EditTeacher.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -206,6 +207,13 @@
     </Compile>
     <Compile Include="DelStudents.aspx.designer.cs">
       <DependentUpon>DelStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudent.aspx.cs">
+      <DependentUpon>EditStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditStudent.aspx.designer.cs">
+      <DependentUpon>EditStudent.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditTeacher.aspx.cs">
       <DependentUpon>EditTeacher.aspx</DependentUpon>
