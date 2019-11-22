@@ -25,7 +25,7 @@
             </div>
         </section>
          <section>
-            <asp:Button runat="server" Text="Submit"/>
+            <asp:Button runat="server" Text="Save" CssClass="save_button"/>
         </section>
     </div>
 </asp:Content>

@@ -5,12 +5,12 @@
     <div id="student_nav">
         <asp:label runat="server">Search:</asp:label>
         <asp:TextBox ID="student_search" runat="server"></asp:TextBox>
-        <asp:Button runat="server" text="submit"/>
+        <asp:Button runat="server" text="Search" CssClass="search_button"/>
         <div id="sql_debugger" runat="server"></div>
       
     </div>
-    <div id="add_button">
-        <asp:Button runat="server" text="ADD" OnClick="Add_Student"/>
+    <div>
+        <asp:Button runat="server" text="ADD" OnClick="Add_Student" CssClass="add_button"/>
     </div>
     <div class="_table" runat="server">
         <div class="listitem">

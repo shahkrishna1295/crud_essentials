@@ -23,10 +23,10 @@
             <div>
                 <asp:Label runat="server">ENROLLMENT DATE</asp:Label>
             <asp:TextBox runat="server" ID="enroldate_input"></asp:TextBox>
-            </div>
         </div>
+    </div>
     <div>
-        <asp:Button runat="server" Text="Add" OnClick="Insert_Student"/>
+        <asp:Button runat="server" Text="Save" OnClick="Save_Student" CssClass="save_button"/>
     </div>
     <div id="students_result" runat="server">
 

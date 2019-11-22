@@ -31,6 +31,8 @@ footer .cwidth li:nth-last-of-type(n+1) {
     padding: 5px;
 }
 
+
+
 /*CSS for index page*/
 
 .classes {
@@ -55,7 +57,34 @@ footer .cwidth li:nth-last-of-type(n+1) {
     padding:30px;
     color: white;
 }
-
+button, .save_button, .add_button, .search_button, .cancel_button {
+    border: 0;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+.search_button {
+    background-color: #0D2869;
+    color:#ffffff;
+}
+.add_button {
+    margin: 2%;
+    background-color: #849324;
+}
+.save_button {
+    margin: 1%;
+    background-color: #723287;
+    color:#ffffff;
+}
+.cancel_button {
+    margin: 1%;
+    background-color: #628395;
+}
+.col6 button {
+    background-color: #FFB30F;
+}
+.col6last button {
+    background-color: #FD151B;
+}
 /*CSS FOR TABLE-LIKE STYLING*/
 #students_result {width:100%;}
 .listitem {background:#fefefe; padding: 8px 3%; width:90%; overflow:hidden;}

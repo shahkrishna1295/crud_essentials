@@ -42,7 +42,7 @@ namespace HTTP5101_School_System
 
         }
 
-        public void Insert_Student(object sender, EventArgs e)
+        public void Save_Student(object sender, EventArgs e)
         {
             string student_fname = fname_input.Text;
             string student_lname = lname_input.Text;
